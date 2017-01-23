@@ -44,9 +44,6 @@ class MainHandler(webapp2.RequestHandler):
         content = header + fortune_paragraph + number_paragraph + cookie_again_button
         self.response.write(content)
 
-routes = [
-     (),
-    ]
 app = webapp2.WSGIApplication([
 ('/', MainHandler)
 ],debug=True)
