@@ -22,10 +22,11 @@ def getRandomFortune():
     fortune = [
        "I see much code in your future",
        "Consider eating more fortune cookies",
-       "You have tamed the mighty Python, now you must free it onto the Great Spider's Web!"
+       "You have tamed the mighty Python, now you must free it onto the Great Spider's Web!",
+       "You'll be lucky enough to get a Tech job soon!"
     ]
     #randomly select one of the fortunes
-    index = random.randint(0,2)
+    index = random.randint(0,3)
     return fortune[index]
 
 class MainHandler(webapp2.RequestHandler):
